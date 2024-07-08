@@ -1,0 +1,5 @@
+- id: filename-len
+  name: filename-len
+  description: This hook checks filename lengths
+  entry: filename-len
+  language: python

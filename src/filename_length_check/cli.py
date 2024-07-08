@@ -1,7 +1,7 @@
 import argparse
 from typing import Sequence
 
-from src.nicks_hooks import filename_length_hook
+from src.filename_length_check import supporting_functions
 
 
 def main(argv: Sequence[str] | None = None) -> int:
@@ -40,7 +40,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     results = [
-        filename_length_hook.is_filename_length_valid(
+        supporting_functions.is_filename_length_valid(
             filename, args.min_len, args.max_len
         )
         for filename in args.filenames

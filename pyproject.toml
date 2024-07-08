@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "filename-length-hook"
+name = "filename_length_check"
 version = "0.1.0"
 authors = [{name = "Nick Cole", email = "nickc6424@gmail.com"},]
 description = "A pre-commit hook to check filename lengths."
@@ -21,7 +21,7 @@ optional-dependencies.dev = [
     "pytest",  # remember to add tests for your hook
 ]
 
-scripts.filename-len = "nicks_hooks.cli:main"
+scripts.filename-len = "filename_length_check.cli:main"
 
 # optional (if you are making a package)
 [tool.setuptools.packages.find]

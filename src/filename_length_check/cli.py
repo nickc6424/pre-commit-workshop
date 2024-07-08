@@ -26,14 +26,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         help='Filenames to process.',
     )
     parser.add_argument(
-        name='--min-len',
-        required=False,
+        '--min-len',
         default=3,
         help='The minimum allowed length for filenames.',
     )
     parser.add_argument(
-        name='--max-len',
-        required=False,
+        '--max-len',
         default=40,
         help='The maximum allowed length for filenames.',
     )

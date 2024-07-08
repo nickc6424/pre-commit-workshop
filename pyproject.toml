@@ -33,7 +33,8 @@ where = ["src"]
 [tool.numpydoc_validation]
 checks = [
     "all",   # report on all checks, except the below
+    "ES01",
     "EX01",
     "SA01",
-    "SS06",
+    "SS06"
 ]

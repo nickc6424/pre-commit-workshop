@@ -38,3 +38,24 @@ checks = [
     "SA01",
     "SS06"
 ]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "single"
+
+[tool.ruff.lint]
+select = [
+    "B", # flake8-bugbear rules
+    "C", # mccabe rules
+    "E", # pycodestyle error rules
+    "F", # pyflakes rules
+    "I", # isort rules
+    "W", # pycodestyle warning rules
+]
+ignore = [
+    "C901", # max-complexity-10
+    "E501", # line-too-long
+]

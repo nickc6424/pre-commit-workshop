@@ -20,7 +20,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     """
     parser = argparse.ArgumentParser(prog='validate-filename-length')
     parser.add_argument(
-        name='--filenames',
+        name='filenames',
         nargs='*',
         help='Filenames to process.',
     )

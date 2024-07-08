@@ -14,7 +14,7 @@ classifiers = [
     "Programming Language :: Python"
 ]
 
-dependencies = ["pathlib"]
+dependencies = []
 requires-python = ">=3.8"
 optional-dependencies.dev = [
     "pre-commit",  # so you can run hooks on the codebase

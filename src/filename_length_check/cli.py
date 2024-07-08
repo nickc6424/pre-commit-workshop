@@ -2,7 +2,7 @@ import argparse
 from sys import argv
 from typing import Sequence
 
-from src.filename_length_check import supporting_functions
+from . import supporting_functions
 
 
 def main(argv: Sequence[str] | None = None) -> int:

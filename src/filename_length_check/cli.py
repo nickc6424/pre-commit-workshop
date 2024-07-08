@@ -2,7 +2,7 @@ import argparse
 from sys import argv
 from typing import Sequence
 
-from . import supporting_functions
+from .supporting_functions import is_filename_length_valid
 
 
 def main(argv: Sequence[str] | None = None) -> int:
@@ -41,7 +41,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     results = [
-        supporting_functions.is_filename_length_valid(
+        is_filename_length_valid(
             filename, args.min_len, args.max_len
         )
         for filename in args.filenames

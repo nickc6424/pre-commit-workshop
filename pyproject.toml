@@ -21,7 +21,7 @@ optional-dependencies.dev = [
     "pytest",  # remember to add tests for your hook
 ]
 
-scripts.your-script-name = "nicks_hooks.cli:main"
+scripts.filename-len = "nicks_hooks.cli:main"
 
 # optional (if you are making a package)
 [tool.setuptools.packages.find]

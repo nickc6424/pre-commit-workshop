@@ -21,7 +21,7 @@ optional-dependencies.dev = [
     "pytest",  # remember to add tests for your hook
 ]
 
-scripts.filename-len = "filename_length_check.cli:main"
+scripts.filename_length_check = "filename_length_check.cli:main"
 
 # optional (if you are making a package)
 [tool.setuptools.packages.find]

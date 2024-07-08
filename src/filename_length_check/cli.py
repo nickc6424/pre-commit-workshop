@@ -1,4 +1,5 @@
 import argparse
+from sys import argv
 from typing import Sequence
 
 from src.filename_length_check import supporting_functions
@@ -46,3 +47,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         for filename in args.filenames
     ]
     return int(all(results))
+
+
+if __name__ == '__main__':
+    main(argv)

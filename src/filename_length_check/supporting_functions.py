@@ -21,7 +21,8 @@ def is_filename_length_valid(filename: str, min_length: int, max_length: int) ->
     is_valid: bool
               True if valid, False if invalid.
     """
-    filename_length = len(Path(filename).stem)
+    filename = Path(filename).stem
+    filename_length = len(filename)
     too_long = filename_length > max_length
     too_short = filename_length < min_length
     if too_long or too_short:
